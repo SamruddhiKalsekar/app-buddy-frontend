@@ -22,7 +22,7 @@ const Board = (props) => {
 
   async function fetchBoard() {
     const response = await axios.get(
-      "api/sheet/getAllData",
+      "/api/sheet/getAllData",
       {
         //http://localhost:8000/sheet/getAllData
         withCredentials: true,
