@@ -7,7 +7,7 @@ const Mail = () => {
     const fetchData = async () => {
       // get the data from the api
       const data = await axios.get(
-        "https://appbuddy.onrender.com/mail/getMail",
+        "api/mail/getMail",
         {
           withCredentials: true,
         }
