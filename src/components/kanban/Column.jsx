@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { Draggable, Droppable } from "react-beautiful-dnd";
 
 import Task from "./Task.jsx";
+import AddTask from "./AddTask.jsx";
 
 const Container = styled.div`
   margin: 8px;
   border: 1px solid black;
   border-radius: 2px;
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,12 +42,19 @@ const Column = (props) => {
                     columnId={props.column.id}
                     state={props.state}
                     setState={props.setState}
+                    board={props.board}
+                    setBoard={props.setBoard}
                   />
                 ))}
                 {provided.placeholder}
               </TaskList>
             )}
           </Droppable>
+          <AddTask
+            column={props.column}
+            board={props.board}
+            setBoard={props.setBoard}
+          />
         </Container>
       )}
     </Draggable>

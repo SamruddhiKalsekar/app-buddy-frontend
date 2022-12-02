@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: '/api', withCredentials: true }); //'http://localhost:8000/'
+export const API = axios.create({ baseURL:'https://appbuddy.onrender.com/' , withCredentials: true }); // 'http://localhost:8000/'
 
 
 

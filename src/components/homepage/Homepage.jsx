@@ -22,7 +22,6 @@ const Homepage = () => {
     dispatch(getSheetId());
   }, [dispatch, sheet_state]);
 
-  //   console.log("User", user);
   return (
     <div>
       Welcome To App Buddy

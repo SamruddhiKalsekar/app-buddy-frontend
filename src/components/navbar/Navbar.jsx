@@ -26,6 +26,15 @@ const Navbar = () => {
         </li>
         {user ? (
           <li>
+            <Link to="/kanban">Kanban Board</Link>
+          </li>
+        ) : (
+          <li>
+       
+          </li>
+        )}
+        {user ? (
+          <li>
             <button onClick={logout_user}>Logout</button>
           </li>
         ) : (

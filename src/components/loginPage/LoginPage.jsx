@@ -7,7 +7,7 @@ import styles from "./LoginPage.module.css";
 
 const LoginPage = () => {
   const googleLogin = () => {
-    window.open("https://appbuddy.onrender.com/auth/google", "_self"); // //http://localhost:8000/auth/google
+    window.open("https://appbuddy.onrender.com/auth/google ", "_self"); // //http://localhost:8000/auth/google
   };
 
   return (
